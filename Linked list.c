@@ -16,12 +16,12 @@ void insertany();
 void deletefront();
 void deleteend();
 void deleteany();
-void display();  // Function prototype for displaying the list
+void display();  
 
 void main() {
     int no;
     char c;
-    header = (NODE*)malloc(sizeof(NODE));  // Initialize header node
+    header = (NODE*)malloc(sizeof(NODE));  
     header->link = NULL;
 
     printf("\n\tPROGRAM TO PERFORM OPERATIONS ON SINGLE LINKED LIST");
@@ -42,7 +42,7 @@ void main() {
                 case 5: deletefront(); break;
                 case 6: deleteend(); break;
                 case 7: deleteany(); break;
-                case 8: display(); break;  // Call display function here
+                case 8: display(); break;  
                 default: printf("\t\tINVALID ENTRY\n"); break;
             }
 
@@ -62,8 +62,8 @@ void insertfront() {
     scanf("%d", &newptr->data);
     newptr->link = NULL;
 
-    newptr->link = header->link;  // Point new node to the first node
-    header->link = newptr;  // Update header to point to the new first node
+    newptr->link = header->link;  
+    header->link = newptr;  
 }
 
 void insertend() {
@@ -80,7 +80,7 @@ void insertend() {
     while (ptr->link != NULL) {
         ptr = ptr->link;
     }
-    ptr->link = newptr;  // Insert new node at the end
+    ptr->link = newptr;  
 }
 
 void insertany() {
@@ -103,7 +103,7 @@ void insertany() {
     if (ptr == NULL)
         printf("\t\tKey not found\n");
     else {
-        newptr->link = ptr->link;  // Insert new node after the key node
+        newptr->link = ptr->link;  
         ptr->link = newptr;
     }
 }
@@ -117,7 +117,7 @@ void deletefront() {
     ptr = header->link;
     header->link = ptr->link;  // Remove the first node
     printf("\t\tDeleted element is %d\n", ptr->data);
-    free(ptr);  // Free the deleted node
+    free(ptr); 
 }
 
 void deleteend() {
@@ -165,7 +165,7 @@ void deleteany() {
     if (ptr1 == NULL)
         printf("\t\tKey not found\n");
     else {
-        ptr->link = ptr1->link;  // Remove the node with the key
+        ptr->link = ptr1->link;  
         printf("\t\tDeleted element is %d\n", ptr1->data);
         free(ptr1);
     }
