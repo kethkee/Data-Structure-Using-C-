@@ -24,12 +24,12 @@ void main() {
     header = (NODE*)malloc(sizeof(NODE));  
     header->link = NULL;
 
-    printf("\n\tPROGRAM TO PERFORM OPERATIONS ON SINGLE LINKED LIST");
-    printf("\n\t.......................................................");
+    printf("\nPROGRAM TO PERFORM OPERATIONS ON SINGLE LINKED LIST");
+    printf("\n.......................................................");
 
     do {
-        printf("\n\t\t\t\tMENU\n\n");
-        printf("\t\t1.TRAVERSE\n\t\t2.INSERT AT FRONT\n\t\t3.INSERT AT END\n\t\t4.INSERT AT ANY POSITION\n\t\t5.DELETE FROM FRONT\n\t\t6.DELETE FROM END\n\t\t7.DELETE FROM ANY POSITION\n\t\t8.DISPLAY LIST\n\t\t9.EXIT\n\t\tEnter your choice: ");
+        printf("\n\t\t\t\t\t\tMENU\n");
+        printf("1.TRAVERSE\t2.INSERT AT FRONT\t3.INSERT AT END\t4.INSERT AT ANY POSITION\t5.DELETE FROM FRONT\t6.DELETE FROM END\t7.DELETE FROM ANY POSITION\t8.DISPLAY LIST\t9.EXIT\nEnter your choice: ");
         scanf("%d", &no);
         if (no == 9)
             break;
