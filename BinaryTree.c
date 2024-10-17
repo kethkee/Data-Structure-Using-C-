@@ -24,7 +24,7 @@ int main()
     }
     else
     {
-    	printf("Element at %d is: %d\n",pos,A[pos-1]);
+    	printf("Element to check is is : %d\n",A[pos]);
     }	
     if (pos > 0)
     {
