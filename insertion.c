@@ -16,6 +16,14 @@ void main()
 		time=time+3;
 	}	
 	time++;
+	printf("The array is:\n");
+	time++;
+	for(i=0;i<n;i++)
+	{
+		printf("%d\t",A[i]);
+		time = time+2;
+	}
+	time++;	
 	for(i=1;i<n;i++)
 	{
 		temp=A[i];
@@ -32,7 +40,7 @@ void main()
 		time++;	
 	}
 	time++;
-	printf("Sorted array is:\n");
+	printf("\nSorted array is:\n");
 	time++;
 	for(i=0;i<n;i++)
 	{
@@ -47,5 +55,4 @@ void main()
 }		
 			
 			
-	
 	
